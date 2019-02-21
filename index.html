@@ -19,13 +19,26 @@
       <a href="index.html">Home</a>
       <a href="#">About</a>
       <a href="https://louisr133.github.io/portfolio">Portfolio</a>
-      <a href="#">Contact</a>
+      <div class="popup" onclick="myFunction()">Contact</div>
+
+
+      <script> 
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+    </script>
+
     </nav>
   </header>
 
+
   <div class="intro">
 
-    <img src="images/Louis.png"/>
+    <div class="picContact">
+      <img src="images/Louis.png"/>
+      <div class="popuptext" id="myPopup">Email: Louisroman133@gmail.com <br><br> Phone: (571) 659-3225</div>
+    </div>
     <h1>Luis Roman - Web Dev</h1>
     <p>Technology is my Jam!</p>
 
@@ -84,7 +97,7 @@
     </table>
   </div>
   <footer>
-    <p>Copyright Awesomeness 2019</p>
+    <p>Copyright &copy; Awesomeness 2019</p>
   </footer>
 
 
