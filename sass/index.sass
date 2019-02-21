@@ -51,6 +51,7 @@ table
 /* Variables Initialized Here */
 
 $space-grey: rgba(150,150,150,0.5)
+$space-white: rgba(225,225,225, 0.85)
 
 
 
@@ -61,16 +62,19 @@ $space-grey: rgba(150,150,150,0.5)
 
 
 html, body
-	height: 100%
+	// height: 100%
 	width: 93%
 	margin: 0 auto
 
 
 
 body
-	//padding: 0 30px
-	box-sizing: content-box
-	margin: auto
+	overflow: hidden
+	background-image: url("../images/backlit.jpg")
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-attachment: fixed
+	color: $space-white
 	font-family: Arial,Times
 	font-size: 62.5%
 
@@ -80,33 +84,88 @@ body
 	margin: 30px 0
 
 
+.popup
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+
+.popuptext
+
+	box-sizing: content-box
+	visibility: hidden
+	width: 200px
+	height: 65px
+	background-color: $space-grey
+	color: #fff
+	font-size: 15px
+	border-radius: 5px
+	padding: 25px
+	// position: absolute
+	// right: 500px
+	// top: 150px
+
+
+.show 
+	visibility: visible
+	-webkit-animation: fadeIn 1s
+	animation: fadeIn 1s
+
+
+@-webkit-keyframes fadeIn
+	from 
+		opacity: 0
+	to 
+		opacity: 1
+
+@keyframes fadeIn 
+	from 
+		opacity: 0
+	to 
+		opacity: 1 
+
+
+
+
 
 nav
 	display: flex
 	justify-content: flex-end
 
+	.popup
+		font-size: 15px
+		margin: 20px 0 20px 20px
+		text-decoration: none
+		color: $space-white
+
 	a
 		font-size: 1.5em
 		margin: 20px 0 20px 20px
 		text-decoration: none
-		color: rgb(55,55,55)
+		color: $space-white
 
 	a:hover
 		color: rgba(0,155,0,0.8)
 
 
 .intro 
-	background: rgba(150,150,150,0.1)
+	background: rgba(50,50,150,0.3)
 	border-radius: 5px
 	padding: 40px 20px
 
 	p
 		font-size: 1.5em
 
+	.picContact
+		display: flex
+		justify-content: space-between
+
 
 	h1
 		font-size: 4.5em
-		color: rgb(55,55,55)
+		color: $space-white
 		font-weight: bold
 		margin-bottom: 15px
 
@@ -144,15 +203,13 @@ nav
 		a
 			text-decoration: none
 			border-bottom: 1px dotted $space-grey
-			color: black
+			color: $space-white
 
 		a:hover
 			color: rgba(0,155,0,0.8)
-
-		a:visted 
-			color: black
 		
 		.logo
+			background: white
 			border: 0
 			margin-top: 5px
 			height: 40px
@@ -199,12 +256,15 @@ nav
 
 		tr:nth-child(even)
 			background-color: #dddddd
+			color: black
 	
 
 
 footer
+	margin-top: 70px
 	width: 100%
-	background-color: grey
+	background-color: rgba(100,100,100,0.2)
+	border-radius: 3px
 	color: white
 	font-size: 1.2em
 	text-align: center
