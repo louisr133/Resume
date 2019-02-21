@@ -53,6 +53,15 @@ table
 $space-grey: rgba(150,150,150,0.5)
 $space-white: rgba(225,225,225, 0.85)
 
+$tablet: "max-width: 800px"
+$mobile: "max-width: 500px"
+$inbetween: "max-width: 600px"
+
+
+
+@mixin nav-space
+	margin: 20px 0px 
+
 
 
 
@@ -75,6 +84,9 @@ body
 	color: $space-white
 	font-family: Arial,Times
 	font-size: 62.5%
+
+
+
 
 .sep
 	width: 100%
@@ -102,6 +114,16 @@ body
 	border-radius: 5px
 	padding: 25px
 
+	@media ($tablet)
+		padding: 20px 15px 25px 15px
+		width: 90%
+		margin-left: 10px
+
+	@media ($inbetween)
+		padding: 20px 0px 25px 15px
+		width: 90%
+		visibility: visible
+
 
 .show 
 	visibility: visible
@@ -123,7 +145,7 @@ body
 
 
 #myBtn
-	// display: none
+	display: none
 	position: fixed
 	bottom: 20px
 	right: 30px
@@ -142,13 +164,6 @@ body
 nav
 	display: flex
 	justify-content: flex-end
-	
-
-	.popup
-		font-size: 15px
-		margin: 20px 0 20px 20px
-		text-decoration: none
-		color: $space-white
 
 	a
 		font-size: 1.5em
@@ -159,6 +174,24 @@ nav
 	a:hover
 		color: rgba(0,155,0,0.8)
 
+	@media ($tablet)
+		justify-content: space-between
+		
+		a
+			@include nav-space
+			
+
+
+	@media ($mobile)
+		flex-direction: column
+
+		a
+			text-align: center
+			border: 1px solid
+			padding: 15px
+			width: 100%
+			margin: 10px 0
+
 
 
 .intro 
@@ -166,12 +199,28 @@ nav
 	border-radius: 5px
 	padding: 40px 20px
 
+	@media ($inbetween)
+		justify-content: center
+		align-content: center
+		text-align: center
+
+		.popuptext
+			text-align: left
+
 	p
 		font-size: 1.5em
 
 	.picContact
 		display: flex
 		justify-content: space-between
+
+	
+	@media ($inbetween)
+		.picContact
+			align-items: center
+			flex-direction: column
+			margin: 10px 0
+
 
 
 	h1
@@ -184,6 +233,8 @@ nav
 		width: 200px
 		height: 250px
 		margin-bottom: 10px
+
+		
 
 	button
 		margin: 20px 0 0 0
@@ -201,6 +252,7 @@ nav
 	margin: 20px 0
 	display: flex
 	justify-content: space-between
+
 
 	h2
 		font-size: 2em
@@ -243,6 +295,26 @@ nav
 
 		li:last-child
 			border-bottom: 0
+
+@media ($inbetween)
+	.middle
+		flex-direction: column
+		justify-content: flex-start
+		
+		.listen
+			width: 100%
+			padding: 10px 0
+
+			.logo
+				background-color: transparent
+				border: 0
+				margin-top: 5px
+				width: 100%
+				height: 100%
+
+		.goodAt
+			width: 100%
+			padding: 10px 0
 
 
 .work
