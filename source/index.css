@@ -141,7 +141,7 @@ table {
 html,
 body {
   width: 93%;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 body {
@@ -170,7 +170,7 @@ body {
 
 .popuptext {
   box-sizing: content-box;
-  visibility: hidden;
+  visibility: visible;
   width: 40%;
   height: auto;
   font-weight: bold;
@@ -567,15 +567,31 @@ nav a:hover {
   padding: 0;
   border: 0;
   font-size: 1.9em;
-  text-align: right;
+  text-align: left;
   vertical-align: auto;
   color: rgba(51, 148, 186, 1);
   border-radius: 2px;
 }
 
 #close-button {
-  background-color: rgba(51, 148, 186, 0.5);
-  border-radius: 5px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 2.5em;
+  /* background-color: rgba(51, 148, 186, 0.5);
+  border-radius: 2px; */
+  padding: 10px;
+}
+
+#close-button:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal {
@@ -584,7 +600,7 @@ nav a:hover {
   width: 70%;
   height: 70%;
   background: white;
-  border: 1px solid rgba(51, 148, 186, 0.5);;
+  border: 3px solid rgba(51, 148, 186, 0.5);;
   padding: 40px;
   margin: auto;
   top: 0;
@@ -633,12 +649,16 @@ nav a:hover {
   border-radius: 2px;
 }
 
+.is-blurred {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
 footer {
   margin-top: 70px;
   width: 100%;
-  background-color: rgba(158, 202, 220, 0.8);
   border-radius: 3px;
-  color: white;
+  color:  rgba(158, 202, 220, 0.8);;
   font-size: 1.4em;
   text-align: center;
   padding: 5px 0;

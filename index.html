@@ -19,9 +19,9 @@
   <a name="home"></a>
   <header>
     <nav>
-      <a href="#home">Home</a>
-      <a href="https://louisr133.github.io/portfolio">Portfolio</a>
-      <a class="popup" onclick="myFunction()" href="#">Contact</a>
+      <!-- <a href="#home">Home</a> -->
+      <!-- <a href="https://louisr133.github.io/portfolio">Portfolio</a> -->
+      <!-- <a class="popup" onclick="myFunction()" href="#">Contact</a> -->
 
     </nav>
   </header>
@@ -110,14 +110,14 @@
         <td>MAY 2022 - OCT 2023</td>
         <td>JSET Automated Technologies</td>
         <td>Software Technician / Programmer </td>
-        <td><a href="#" class="linkDetails" onclick="showPopup('Jset')">Job Details</a></td>
+        <td><a href="#/" id="JsetDetails" class="linkDetails" onclick="showPopup('Jset')">Job Details</a></td>
 
       </tr>
       <tr>
         <td>JULY 2018 - JULY 2020</td>
         <td>Protect US</td>
         <td>Web Developement Intern</td>
-        <td><a href="#" class="linkDetails" onclick="showPopup('ProtectUs')">Job Details</a></td>
+        <td><a href="#/" id="ProtectUsDetails" class="linkDetails" onclick="showPopup('ProtectUs')">Job Details</a></td>
 
 
       </tr>
@@ -125,14 +125,14 @@
         <td>AUG 2017 – JUNE 2018</td>
         <td>Tutor Doctor</td>
         <td>Mathematics and Computer Science Tutor</td>
-        <td><a href="#" class="linkDetails" onclick="showPopup('TutorDoctor');">Job Details</a></td>
+        <td><a href="#/" id="TutorDoctorDetails" class="linkDetails" onclick="showPopup('TutorDoctor');">Job Details</a></td>
       </tr>
     </table>
 
     <div id="TutorDoctor" class="modal">
       <div class="title-close">
         <h1>TUTOR DOCTOR</h1>
-        <button class="" id="close-button" onclick="closePopup('TutorDoctor');">X</button>
+        <span class="" id="close-button" onclick="closePopup('TutorDoctor');">&times;</span> 
       </div>
 
       <div class="details" id="detailBreaker">
@@ -196,7 +196,7 @@
     <div id="ProtectUs" class="modal">
       <div class="title-close">
         <h1>Protect US</h1>
-        <button id="close-button" onclick="closePopup('ProtectUs');">X</button>
+        <span id="close-button" onclick="closePopup('ProtectUs');">&times;</span>
       </div>
 
       <div id="detailBreaker" class="details">
@@ -260,7 +260,7 @@
     <div id="Jset" class="modal">
       <div class="title-close">
         <h1>JSET Automated Technologies</h1>
-        <button id="close-button" onclick="closePopup('Jset');">X</button>
+        <span id="close-button" onclick="closePopup('Jset');">&times;</span>
       </div>
 
       <div id="detailBreaker" class="details">
