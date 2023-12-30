@@ -518,7 +518,9 @@ nav a:hover {
 
 #close-button {
   color: #aaaaaa;
-  float: right;
+  position: fixed;
+  left: 89.5%;
+  top:10%;
   font-size: 2.5em;
   padding: 10px;
 }
