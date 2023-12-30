@@ -183,23 +183,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 800px) {
-  .popuptext {
-    justify-self: center;
-    padding: 20px 15px 25px 15px;
-    width: 90%;
-    margin-left: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .popuptext {
-    padding: 20px 0px 25px 15px;
-    width: 90%;
-    visibility: visible;
-  }
-}
-
 .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
@@ -259,17 +242,8 @@ nav a:hover {
   color: rgba(51, 148, 186, 1);
 }
 
-@media (max-width: 800px) {
-  nav {
-    justify-content: space-between;
-  }
 
-  nav a {
-    margin: 20px 0px;
-  }
-}
-
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   nav {
     flex-direction: column;
   }
@@ -281,7 +255,7 @@ nav a:hover {
     width: 100%;
     margin: 10px 0;
   }
-}
+} */
 
 .intro {
   background: linear-gradient(90deg, #9ecadc 212px, #fff 0%);
@@ -289,17 +263,7 @@ nav a:hover {
   padding: 40px 20px;
 }
 
-@media (max-width: 600px) {
-  .intro {
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-  }
 
-  .intro .popuptext {
-    text-align: center;
-  }
-}
 
 .intro p {
   font-size: 1.5em;
@@ -310,13 +274,7 @@ nav a:hover {
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
-  .intro .picContact {
-    align-items: center;
-    flex-direction: column;
-    margin: 10px 0;
-  }
-}
+
 
 .intro h1 {
   font-size: 9.5em;
@@ -359,6 +317,7 @@ nav a:hover {
   font-family: Avenir Next LT Pro Light;
   width: 49%;
   font-size: 1.6em;
+  margin-right: 10px ;
 }
 
 .middle .listen a {
@@ -413,30 +372,11 @@ nav a:hover {
   border-bottom: 0;
 }
 
-@media (max-width: 600px) {
-  .middle {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .middle .listen {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .middle .listen .logo {
-    background-color: transparent;
-    border: 0;
-    margin-top: 5px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .middle .goodAt {
-    width: 100%;
-    padding: 10px 0;
-  }
+.middle .goodAt {
+  width: 100%;
+  padding: 10px 0;
 }
+
 
 .work {
   margin-bottom: 20px;
@@ -600,7 +540,8 @@ nav a:hover {
   width: 70%;
   height: 70%;
   background: white;
-  border: 3px solid rgba(51, 148, 186, 0.5);;
+  border: 3px solid rgba(51, 148, 186, 0.5);
+  ;
   padding: 40px;
   margin: auto;
   top: 0;
@@ -628,9 +569,10 @@ nav a:hover {
 }
 
 #detailBreaker .breaker {
-  margin: 0px 10px 10px 10px ; 
+  margin: 0px 10px 10px 10px;
   width: 100%;
 }
+
 .modal .details h1 {
   width: 100%;
   text-align: center;
@@ -658,10 +600,68 @@ footer {
   margin-top: 70px;
   width: 100%;
   border-radius: 3px;
-  color:  rgba(158, 202, 220, 0.8);;
+  color: rgba(158, 202, 220, 0.8);
+  ;
   font-size: 1.4em;
   text-align: center;
   padding: 5px 0;
+}
+
+/* Media Format Changes */
+
+@media (max-width: 1123px) {
+  .popuptext {
+    justify-self: center;
+    padding: 20px 15px 25px 15px;
+    width: 45%;
+    margin-left: 10px;
+    background-color: #fff;
+  }
+  .intro {
+    background: linear-gradient(0deg, #9ecadc 52%, #fff 00%);
+    border-radius: 5px;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 875px) {
+  .intro {
+    background: #fff;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .popuptext {
+    justify-self: center;
+
+  }
+  .intro .picContact {
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .intro .popuptext {
+    background-color: #9ecadc;
+    width: 100%;
+    text-align: center;
+  }
+  .middle {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .middle .listen {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .middle .listen .logo {
+    background-color: transparent;
+    border: 0;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
