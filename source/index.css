@@ -520,8 +520,6 @@ nav a:hover {
   color: #aaaaaa;
   float: right;
   font-size: 2.5em;
-  /* background-color: rgba(51, 148, 186, 0.5);
-  border-radius: 2px; */
   padding: 10px;
 }
 
@@ -543,7 +541,7 @@ nav a:hover {
   width: 90%;
   height: 85%;
   background: white;
-  border: 3px solid rgba(51, 148, 186, 0.5);
+  border: 5px solid rgba(51, 148, 186, 0.5);
   padding: 40px;
   margin: auto;
   top: 0;
@@ -552,7 +550,7 @@ nav a:hover {
   left: 0;
   z-index: 9999;
   display: block;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .modal ul {
