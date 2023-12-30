@@ -24,13 +24,63 @@ function myFunction() {
 
 function showPopup(id) {
     var popupWindow = document.getElementById(id);
-    popupWindow.style.display = "block";
+    popupWindow.className =  `${id} is-visuallyHidden`
 
 }
 
 function closePopup(id) {
     var popupWindow = document.getElementById(id);
-    popupWindow.style.display = "none";
+    var _listen = document.getElementById ('listen');
+    var _goodAt = document.getElementById('goodAt');
+    var _body = document.getElementById('body');
+    var _Education = document.getElementById('Education');
+    var _Awards = document.getElementById('Awards');
+    var _table = document.getElementById('table');
+    var _intro = document.getElementById('intro');
+
+    popupWindow.className = `${id} is-hidden is-visuallyHidden`;
+    _listen.className = 'listen';
+    _goodAt.className = 'goodAt';
+    _body.className = '';
+    _Awards.className = 'Awards';
+    _Education.className = 'Education';
+    _table.className = 'jobs';
+    _intro.className = 'intro';
+
+    
+    
 }
 
 
+function getModal(className) {
+    var modal = document.getElementsByClassName(className);
+    return modal;
+
+}
+
+
+function blurry(modal) {
+    var _modal = document.getElementById(modal);
+    var _goodAt = document.getElementById('goodAt');
+    var _body = document.getElementById('body');
+    var _listen = document.getElementById('listen');
+    var _Education = document.getElementById('Education');
+    var _Awards = document.getElementById('Awards');
+    var _table = document.getElementById('table');
+    var _intro = document.getElementById('intro');
+
+    showPopup(modal);
+
+    _modal.className = `${modal} is-visuallyHidden`;
+    setTimeout(function() {
+        _listen.className = 'listen is-blurred';
+        _goodAt.className = "goodAt is-blurred";
+        _Education.className = "Education is-blurred";
+        _Awards.className = "Awards is-blurred";
+        _modal.className = "modal";
+        _table.className = 'jobs is-blurred';
+        _intro.className = 'intro is-blurred';
+    }, 100);
+    _body.className = "ModalOpen"
+    
+}

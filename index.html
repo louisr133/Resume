@@ -12,7 +12,7 @@
   <script src="source/index.js"></script>
 </head>
 
-<body>
+<body id="body">
   <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
 
@@ -25,324 +25,328 @@
 
     </nav>
   </header>
-
-
-  <div class="intro">
-
-    <div class="picContact">
-      <div class="subPic">
-        <h1>Luis Roman</h1>
+    <div id="intro" class="intro">
+      <div class="picContact">
+        <div class="subPic">
+          <h1>Luis Roman</h1>
+        </div>
+        <div class="popuptext" id="myPopup">Email: Roman.MathDev@gmail.com</div>
       </div>
-      <div class="popuptext" id="myPopup">Email: Roman.MathDev@gmail.com</div>
+
+    </div>
+    <div class="middle">
+      <div id="listen" class="listen">
+        <h2>OBJECTIVE</h2>
+        <p style="margin-bottom: 15px;">My primary goal is to find the right moment with the right company. As a
+          forward-thinking individual, I seek to progress the future through collaboration, knowledge, hard-work, and
+          production.
+        </p>
+
+        <h2>REFERENCES</h2>
+        <p>Available upon request.</p>
+
+        <h2>ADDRESS</h2>
+        <p>Available upon request.</p>
+
+        <h2>PHONE</h2>
+        <p>Available upon request.</p>
+
+
+        <!-- <a class="logo" href="https://github.com/louisr133"><img class="logo" src="images/githubLogo.png"/></a> -->
+      </div>
+      <div id="goodAt" class="goodAt">
+        <h2>SKILLS</h2>
+        <table>
+          <tr>
+            <td>Data Structures</td>
+            <td>Node.js</td>
+
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>HTML5</td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>Linear Algebra</td>
+          </tr>
+          <td>Differential Equations</td>
+          <td>Calculus</td>
+          </tr>
+          <tr>
+            <td>Word</td>
+            <td>Excel</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Communcation</td>
+          </tr>
+          <tr>
+            <td>Problem Solving</td>
+            <td>Technical Skills</td>
+          </tr>
+          <tr>
+            <td>Mathematical Animation</td>
+            <td>Java</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
-  </div>
-  <div class="middle">
-    <div class="listen">
-      <h2>OBJECTIVE</h2>
-      <p style="margin-bottom: 15px;">My primary goal is to find the right moment with the right company. As a
-        forward-thinking individual, I seek to progress the future through collaboration, knowledge, hard-work, and
-        production.
-      </p>
+    <div id="work" class="work">
 
-      <h2>REFERENCES</h2>
-      <p>Available upon request.</p>
-
-      <h2>ADDRESS</h2>
-      <p>Available upon request.</p>
-
-      <h2>PHONE</h2>
-      <p>Available upon request.</p>
-
-
-      <!-- <a class="logo" href="https://github.com/louisr133"><img class="logo" src="images/githubLogo.png"/></a> -->
-    </div>
-    <div class="goodAt">
-      <h2>SKILLS</h2>
-      <table>
+      <h3 style="margin-top: 15px;">EXPERIENCE</h3>
+      <table id='table' class="jobs">
         <tr>
-          <td>Data Structures</td>
-          <td>Node.js</td>
+          <th>Dates</th>
+          <th>Company</th>
+          <th>Position</th>
+          <th>Learn More</th>
+        </tr>
+        <tr>
+          <td>MAY 2022 - OCT 2023</td>
+          <td>JSET Automated Technologies</td>
+          <td>Software Technician / Programmer </td>
+          <td><a href="#/" id="JsetDetails" class="linkDetails" onclick="blurry('Jset')">Job Details</a></td>
 
         </tr>
         <tr>
-          <td>JavaScript</td>
-          <td>HTML5</td>
+          <td>JULY 2018 - JULY 2020</td>
+          <td>Protect US</td>
+          <td>Web Developement Intern</td>
+          <td><a href="#/" id="ProtectUsDetails" class="linkDetails" onclick="blurry('ProtectUs')">Job Details</a>
+          </td>
+
+
         </tr>
         <tr>
-          <td>Web Development</td>
-          <td>Linear Algebra</td>
-        </tr>
-        <td>Differential Equations</td>
-        <td>Calculus</td>
-        </tr>
-        <tr>
-          <td>Word</td>
-          <td>Excel</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>Communcation</td>
-        </tr>
-        <tr>
-          <td>Problem Solving</td>
-          <td>Technical Skills</td>
-        </tr>
-        <tr>
-          <td>Mathematical Animation</td>
-          <td>Java</td>
+          <td>AUG 2017 – JUNE 2018</td>
+          <td>Tutor Doctor</td>
+          <td>Mathematics and Computer Science Tutor</td>
+          <td><a href="#/" id="TutorDoctorDetails" class="linkDetails" onclick="blurry('TutorDoctor')">Job Details</a>
+          </td>
         </tr>
       </table>
-    </div>
-  </div>
 
-  <div class="work">
+      <div id="TutorDoctor" class="modal is-hidden">
+        <div class="title-close">
+          <h1>TUTOR DOCTOR</h1>
+          <span class="" id="close-button" onclick="closePopup('TutorDoctor');">&times;</span>
+        </div>
 
-    <h3 style="margin-top: 15px;">EXPERIENCE</h3>
-    <table class="jobs">
-      <tr>
-        <th>Dates</th>
-        <th>Company</th>
-        <th>Position</th>
-        <th>Learn More</th>
-      </tr>
-      <tr>
-        <td>MAY 2022 - OCT 2023</td>
-        <td>JSET Automated Technologies</td>
-        <td>Software Technician / Programmer </td>
-        <td><a href="#/" id="JsetDetails" class="linkDetails" onclick="showPopup('Jset')">Job Details</a></td>
+        <div class="details" id="detailBreaker">
+          <h1>Job Details</h1>
+          <div class="breaker"></div>
+        </div>
 
-      </tr>
-      <tr>
-        <td>JULY 2018 - JULY 2020</td>
-        <td>Protect US</td>
-        <td>Web Developement Intern</td>
-        <td><a href="#/" id="ProtectUsDetails" class="linkDetails" onclick="showPopup('ProtectUs')">Job Details</a></td>
+        <div class="details">
+          <p>Professional Experience:</p>
+          <ul>
+            <li>Adapted teaching methodologies to cater to diverse student needs, including private and online education
+              for students ranging from 5 to 18 years old. </li>
+            <li>Customized sessions to meet individual learning styles, addressing unique challenges and goals.</li>
+          </ul>
+          <p>Provided Exceptional Guidance and Delivered expert support across various mathematical subjects, including:
+          </p>
+          <ul>
 
+            <li>Precalculus: Functions, conic sections, polar coordinates, limits, etc.</li>
+            <li>Algebra 1 and 2: Linear equations, quadratics, polynomials, rational expressions, sequences, complex
+              numbers, etc.</li>
+            <li>Geometry: Points, congruence, triangles, quadrilaterals, circles, areas, etc.</li>
+            <li>Trigonometry: Ratios, identities, equations, Law of Sines/Cosines, graphs, applications, etc.</li>
+            <li>Calculus 1: Limits, derivatives, rules of differentiation, applications, related rates.</li>
+            <li>Calculus 2: Integration by parts, u-substitution, applications of integration, sequences, series.</li>
+            <li>Calculus 3: Multivariable calculus, partial derivatives, multiple integrals, vector calculus, parametric
+              surfaces, surface integrals, divergence, curl.</li>
+            <li>Linear Algebra: Vectors, matrices, determinants, eigenvalues, systems, transformations, etc.</li>
+            <li>Differential Equations: First/second-order, systems, applications, etc.</li>
+            <li>Discrete Mathematics: Set theory, propositional logic, number theory, graph theory, combinatorics,
+              relations, proofs, probability, etc.</li>
+          </ul>
 
-      </tr>
-      <tr>
-        <td>AUG 2017 – JUNE 2018</td>
-        <td>Tutor Doctor</td>
-        <td>Mathematics and Computer Science Tutor</td>
-        <td><a href="#/" id="TutorDoctorDetails" class="linkDetails" onclick="showPopup('TutorDoctor');">Job Details</a></td>
-      </tr>
-    </table>
+          <p>Optimized Learning Resources:</p>
+          <ul>
+            <li>
+              Recommended a curated selection of textbooks, both traditional and digital, matching students’ preferences
+              and learning profiles.
+            </li>
+            <li>
+              Leveraged diverse authors and resources to enhance comprehension, catering to different levels of
+              familiarity with mathematical concepts.
+            </li>
+          </ul>
 
-    <div id="TutorDoctor" class="modal">
-      <div class="title-close">
-        <h1>TUTOR DOCTOR</h1>
-        <span class="" id="close-button" onclick="closePopup('TutorDoctor');">&times;</span> 
+          <p>
+            Inclusive Education Training:
+          </p>
+          <ul>
+            <li>
+              Participated in specialized training sessions focused on effective communication and instruction for
+              students with diverse needs, including those with autism.
+            </li>
+            <li>
+              Developed the ability to adapt techniques to ensure an inclusive and supportive learning environment.
+            </li>
+        </div>
+
       </div>
 
-      <div class="details" id="detailBreaker">
-        <h1>Job Details</h1>
-        <div class="breaker"></div>
+      <div id="ProtectUs" class="modal is-hidden">
+        <div class="title-close">
+          <h1>Protect US</h1>
+          <span id="close-button" onclick="closePopup('ProtectUs');">&times;</span>
+        </div>
+
+        <div id="detailBreaker" class="details">
+          <h1>Job Details</h1>
+          <div class="breaker"></div>
+        </div>
+
+        <div class="details">
+          <p>Professional Experience:</p>
+          <ul>
+            <li>Developed browser extensions across multiple platforms (Chrome, Edge, and Firefox) to enhance user
+              experience and functionality.</li>
+            <li>Wrote content scripts in JavaScript (DOM), HTML, and CSS (SASS) to dynamically modify web documents
+              according to project requirements.</li>
+            <li>
+              Leveraged anonymous user data to create tailored advertising content, optimizing SEO strategies.
+            </li>
+            <li>
+              Managed and maintained a Firebase database (No-SQL) to store and retrieve essential data for web
+              applications.
+            </li>
+          </ul>
+          <p>Teamwork:</p>
+          <ul>
+            <li>
+              Collaborated closely with a small team to design, implement, and launch real-world web projects, gaining
+              practical experience in teamwork and project delivery.
+            </li>
+          </ul>
+          <p>Skills Used</p>
+          <ul>
+            <li>
+              Strong foundational knowledge of HTML, CSS, JavaScript, and UI Principles.
+            </li>
+            <li>
+              Demonstrated experience in crafting web applications using React, Redux, and Node.js, with a focus on
+              continuous skill enhancement.
+            </li>
+            <li>
+              Competent in areas such as state management with react and redux, data persistence, authentication, APIs,
+              testing, and foundational SQL.
+            </li>
+            <li>
+              Proficient in Python, Java, and well-versed in optomizing algorithms, data structures, graphs, and hash
+              tables.
+            </li>
+          </ul>
+
+          <p>
+            Inclusive Education Training:
+          </p>
+          <ul>
+            <li>
+              Participated in specialized training sessions focused on effective communication and instruction for
+              students with diverse needs, including those with autism.
+            </li>
+            <li>
+              Developed the ability to adapt techniques to ensure an inclusive and supportive learning environment.
+            </li>
+        </div>
+
       </div>
 
-      <div class="details">
-        <p>Professional Experience:</p>
-        <ul>
-          <li>Adapted teaching methodologies to cater to diverse student needs, including private and online education
-            for students ranging from 5 to 18 years old. </li>
-          <li>Customized sessions to meet individual learning styles, addressing unique challenges and goals.</li>
-        </ul>
-        <p>Provided Exceptional Guidance and Delivered expert support across various mathematical subjects, including:
-        </p>
-        <ul>
+      <div id="Jset" class="modal is-hidden">
+        <div class="title-close">
+          <h1>JSET Automated Technologies</h1>
+          <span id="close-button" onclick="closePopup('Jset');">&times;</span>
+        </div>
 
-          <li>Precalculus: Functions, conic sections, polar coordinates, limits, etc.</li>
-          <li>Algebra 1 and 2: Linear equations, quadratics, polynomials, rational expressions, sequences, complex
-            numbers, etc.</li>
-          <li>Geometry: Points, congruence, triangles, quadrilaterals, circles, areas, etc.</li>
-          <li>Trigonometry: Ratios, identities, equations, Law of Sines/Cosines, graphs, applications, etc.</li>
-          <li>Calculus 1: Limits, derivatives, rules of differentiation, applications, related rates.</li>
-          <li>Calculus 2: Integration by parts, u-substitution, applications of integration, sequences, series.</li>
-          <li>Calculus 3: Multivariable calculus, partial derivatives, multiple integrals, vector calculus, parametric
-            surfaces, surface integrals, divergence, curl.</li>
-          <li>Linear Algebra: Vectors, matrices, determinants, eigenvalues, systems, transformations, etc.</li>
-          <li>Differential Equations: First/second-order, systems, applications, etc.</li>
-          <li>Discrete Mathematics: Set theory, propositional logic, number theory, graph theory, combinatorics,
-            relations, proofs, probability, etc.</li>
-        </ul>
+        <div id="detailBreaker" class="details">
+          <h1>Job Details</h1>
+          <div class="breaker"></div>
+        </div>
 
-        <p>Optimized Learning Resources:</p>
-        <ul>
-          <li>
-            Recommended a curated selection of textbooks, both traditional and digital, matching students’ preferences
-            and learning profiles.
-          </li>
-          <li>
-            Leveraged diverse authors and resources to enhance comprehension, catering to different levels of
-            familiarity with mathematical concepts.
-          </li>
-        </ul>
+        <div class="details">
+          <p>Building Automation Systems Expertise:</p>
+          <ul>
+            <li>Proficient in creating and managing building automation systems, including new station development,
+              system
+              architecture design, and effective tagging strategies. Experienced in troubleshooting electrical circuitry
+              and integrating various components, such as heat pumps, air handling units, dampers, sensors, and more, to
+              optimize system performance. </li>
+          </ul>
+          <p>Protocols Mastery:</p>
+          <ul>
+            <li>Skilled in Modbus and BACnet protocols, ensuring seamless communication and integration within building
+              control systems. Proficient in integrating devices through IP and IoT technologies, enabling comprehensive
+              connectivity and control.</li>
+          </ul>
+          <p>Data Management and Analysis:</p>
+          <ul>
+            <li>
+              Experienced in alarm monitoring, data analysis, and collecting histories, trends, and progress data for
+              informed decision-making and system optimization. Specialized in large-scale data centers and government
+              sector projects, ensuring efficient building automation solutions.
+            </li>
+          </ul>
+          <p>
+            User Access Control and Authentication:
+          </p>
+          <ul>
+            <li>
+              Proficient in configuring user profiles with varying visibility and permissions within building automation
+              systems. Utilizing authentication protocols like LDAP and DigestScheme, I create customized user access
+              schemes, ensuring appropriate resource access.
+            </li>
+          </ul>
+          <p>
+            Niagara Modules, Troubleshooting, and Documentation Analysis:
+          </p>
+          <ul>
+            <li>
+              Skilled in Java programming, troubleshooting Niagara module errors, and enhancing functionality by
+              extracting valuable insights from documentation and module source code.
+            </li>
+          </ul>
+          <p>
+            EC-gfx Programming Expertise:
+          </p>
+          <ul>
+            <li>
+              Proficient in EC-gfx programming since day one, showcasing a strong grasp of logic, code scope,
+              mathematical principles, and more.
+            </li>
+          </ul>
+          <p>
+            Achieved these skills within a year, highlighting my ability to adapt to new technologies and challenges
+            without prior field experience.
+          </p>
+        </div>
 
-        <p>
-          Inclusive Education Training:
-        </p>
-        <ul>
-          <li>
-            Participated in specialized training sessions focused on effective communication and instruction for
-            students with diverse needs, including those with autism.
-          </li>
-          <li>
-            Developed the ability to adapt techniques to ensure an inclusive and supportive learning environment.
-          </li>
       </div>
 
-    </div>
 
-    <div id="ProtectUs" class="modal">
-      <div class="title-close">
-        <h1>Protect US</h1>
-        <span id="close-button" onclick="closePopup('ProtectUs');">&times;</span>
-      </div>
 
-      <div id="detailBreaker" class="details">
-        <h1>Job Details</h1>
-        <div class="breaker"></div>
-      </div>
-
-      <div class="details">
-        <p>Professional Experience:</p>
-        <ul>
-          <li>Developed browser extensions across multiple platforms (Chrome, Edge, and Firefox) to enhance user
-            experience and functionality.</li>
-          <li>Wrote content scripts in JavaScript (DOM), HTML, and CSS (SASS) to dynamically modify web documents
-            according to project requirements.</li>
-          <li>
-            Leveraged anonymous user data to create tailored advertising content, optimizing SEO strategies.
-          </li>
-          <li>
-            Managed and maintained a Firebase database (No-SQL) to store and retrieve essential data for web
-            applications.
-          </li>
-        </ul>
-        <p>Teamwork:</p>
-        <ul>
-          <li>
-            Collaborated closely with a small team to design, implement, and launch real-world web projects, gaining
-            practical experience in teamwork and project delivery.
-          </li>
-        </ul>
-        <p>Skills Used</p>
-        <ul>
-          <li>
-            Strong foundational knowledge of HTML, CSS, JavaScript, and UI Principles.
-          </li>
-          <li>
-            Demonstrated experience in crafting web applications using React, Redux, and Node.js, with a focus on continuous skill enhancement.
-          </li>
-          <li>
-            Competent in areas such as state management with react and redux, data persistence, authentication, APIs, testing, and foundational SQL.
-          </li>
-          <li>
-            Proficient in Python, Java, and well-versed in optomizing algorithms, data structures, graphs, and hash tables.
-          </li>
-        </ul>
-
-        <p>
-          Inclusive Education Training:
-        </p>
-        <ul>
-          <li>
-            Participated in specialized training sessions focused on effective communication and instruction for
-            students with diverse needs, including those with autism.
-          </li>
-          <li>
-            Developed the ability to adapt techniques to ensure an inclusive and supportive learning environment.
-          </li>
-      </div>
-
-    </div>
-
-    <div id="Jset" class="modal">
-      <div class="title-close">
-        <h1>JSET Automated Technologies</h1>
-        <span id="close-button" onclick="closePopup('Jset');">&times;</span>
-      </div>
-
-      <div id="detailBreaker" class="details">
-        <h1>Job Details</h1>
-        <div class="breaker"></div>
-      </div>
-
-      <div class="details">
-        <p>Building Automation Systems Expertise:</p>
-        <ul>
-          <li>Proficient in creating and managing building automation systems, including new station development, system
-            architecture design, and effective tagging strategies. Experienced in troubleshooting electrical circuitry
-            and integrating various components, such as heat pumps, air handling units, dampers, sensors, and more, to
-            optimize system performance. </li>
-        </ul>
-        <p>Protocols Mastery:</p>
-        <ul>
-          <li>Skilled in Modbus and BACnet protocols, ensuring seamless communication and integration within building
-            control systems. Proficient in integrating devices through IP and IoT technologies, enabling comprehensive
-            connectivity and control.</li>
-        </ul>
-        <p>Data Management and Analysis:</p>
-        <ul>
-          <li>
-            Experienced in alarm monitoring, data analysis, and collecting histories, trends, and progress data for
-            informed decision-making and system optimization. Specialized in large-scale data centers and government
-            sector projects, ensuring efficient building automation solutions.
-          </li>
-        </ul>
-        <p>
-          User Access Control and Authentication:
-        </p>
-        <ul>
-          <li>
-            Proficient in configuring user profiles with varying visibility and permissions within building automation
-            systems. Utilizing authentication protocols like LDAP and DigestScheme, I create customized user access
-            schemes, ensuring appropriate resource access.
-          </li>
-        </ul>
-        <p>
-          Niagara Modules, Troubleshooting, and Documentation Analysis:
-        </p>
-        <ul>
-          <li>
-            Skilled in Java programming, troubleshooting Niagara module errors, and enhancing functionality by
-            extracting valuable insights from documentation and module source code.
-          </li>
-        </ul>
-        <p>
-          EC-gfx Programming Expertise:
-        </p>
-        <ul>
-          <li>
-            Proficient in EC-gfx programming since day one, showcasing a strong grasp of logic, code scope,
-            mathematical principles, and more.
-          </li>
-        </ul>
-        <p>
-          Achieved these skills within a year, highlighting my ability to adapt to new technologies and challenges
-          without prior field experience.
-        </p>
-      </div>
-
+    <div id="Education" class="Education">
+      <h2>EDUCATION</h2>
+      <div class="breaker"></div>
+      <p>Earned: Associate’s Degree with Honors in Computer Science</p>
+      <p>Expected: Associate’s Degree in Mathematics (May 2024), B.S in Computer Science (May 2026), B.S. in Mathematics
+        (May 2026)</p>
     </div>
 
-  </div>
+    <div id="Awards" class="Awards">
+      <h2>CERIFICATIONS AND AWARDS</h2>
+      <div class="breaker"></div>
+      <p>Niagara 4 Technical Certification</p>
+      <p>Full Stack Web Development Certification</p>
+      <p>Phi Theta Kappa Honors Society</p>
+    </div>
 
-
-  <div class="Education">
-    <h2>EDUCATION</h2>
-    <div class="breaker"></div>
-    <p>Earned: Associate’s Degree with Honors in Computer Science</p>
-    <p>Expected: Associate’s Degree in Mathematics (May 2024), B.S in Computer Science (May 2026), B.S. in Mathematics
-      (May 2026)</p>
-  </div>
-
-  <div class="Awards">
-    <h2>CERIFICATIONS AND AWARDS</h2>
-    <div class="breaker"></div>
-    <p>Niagara 4 Technical Certification</p>
-    <p>Full Stack Web Development Certification</p>
-    <p>Phi Theta Kappa Honors Society</p>
   </div>
 
   <footer>

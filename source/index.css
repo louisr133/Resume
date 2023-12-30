@@ -453,6 +453,7 @@ nav a:hover {
   font-size: 2em;
   font-weight: bold;
   color: rgba(51, 148, 186, 0.8);
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -543,15 +544,14 @@ nav a:hover {
   height: 85%;
   background: white;
   border: 3px solid rgba(51, 148, 186, 0.5);
-  ;
   padding: 40px;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
-  display: none;
+  z-index: 9999;
+  display: block;
   border-radius: 5px;
 }
 
@@ -592,7 +592,9 @@ nav a:hover {
   padding: 10px;
   border-radius: 2px;
 }
-
+.ModalOpen { overflow: hidden; }
+.is-hidden { display: none; }
+.is-visuallyHidden { opacity: 0; }
 .is-blurred {
   filter: blur(2px);
   -webkit-filter: blur(2px);
