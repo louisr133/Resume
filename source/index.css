@@ -525,6 +525,12 @@ nav a:hover {
   padding: 10px;
 }
 
+@media (max-width: 600px) {
+  #close-button {
+    left: 87%;
+  }
+}
+
 #close-button:hover {
   color: #000;
   text-decoration: none;
