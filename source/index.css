@@ -527,12 +527,6 @@ nav a:hover {
 
 @media (max-width: 600px) {
   #close-button {
-    left: 87%;
-  }
-}
-
-@media (max-width: 450px) {
-  #close-button {
     left: 84%;
   }
 }
