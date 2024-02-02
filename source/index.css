@@ -435,14 +435,56 @@ nav a:hover {
 
 .work table td {
   font-size: 1.4em;
+
 }
 
-.work table th {
-  font-weight: bold;
-  border-top: 2px solid rgba(51, 148, 186, 0.8);
-  padding: 15px;
-  text-align: left;
-  font-size: 1.4em;
+/* #conceptsTable table th {
+  border: none;
+}
+#conceptsTable table {
+  width: auto;
+}
+#conceptsTable table tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+#conceptsTable table tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+#conceptsTable table tr {
+  margin:5px;
+}
+
+#conceptsTable table td {
+  width: 160px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.6em;
+} */
+#conceptsTable {
+  width: inherit;
+  height: auto;
+}
+.conceptsRows {
+  width: auto;
+}
+.conceptsData {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.conceptsInfo {
+  background-color: whitesmoke;
+  text-align: center;
+  width: 150px;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.45em;
+  flex-grow: 2;
 }
 
 .Education {
